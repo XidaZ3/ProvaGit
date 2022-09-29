@@ -10,9 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_29_185931) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_29_193249) do
   create_table "storages", force: :cascade do |t|
     t.integer "serial_number"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "supers", force: :cascade do |t|
+    t.string "super"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
